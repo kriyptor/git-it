@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git-It!</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="picture/favicon.ico" type="image/icon" sizes="16x16"> 
+</head>
+<body>
+    <header class="shadow-lg"><a href="https://git-scm.com"><i class="fa fa-git-square" aria-hidden="true" style="color: orangered;"></i></a>-it!</header>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron-background">
+        <img src="picture/bg.jpg" class="blur">
+        </div>
+        <div class="container text-white">
+          <h1 class="display-4">Git, what?</h1>
+          <p class="lead">Well technically, Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity,and support for distributed, non-linear workflows.<br>
+            Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.
+          </p>
+          <a class="btn btn-secondary btn-lg" href="https://git-scm.com/downloads" role="button" id="but2"><i class="fa fa-chevron-circle-down" aria-hidden="true" id="fa"></i> Download Git</a>
+          <hr class="my-4">
+          <p style="font-size: 18px;">Let's understand it in more convienent way!</p>
+        </div>
+        </div> 
+          <div class="container mt-5 mb-6">
+            <div class="cardh">
+                <div class="card-body">
+                  Let's Understand it with a plot
+                </div>
+              </div>
+        </div>
+         <div class="container">
+          <div class="card3 mb-3" style="max-width: 980px; margin-left: 2rem;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="picture/undraw_web_search_eetr.svg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body3">
+                  <h5 class="card-title3">You Searched</h5>
+                  <div class="line"></div>
+                  <p class="card-text3">Suppose, You googled something very important topic reagrding your work. 
+                                        And you came across a perfect set of content, 
+                                        But mistakenly you have'nt saved it at that point time and moved on for other task.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card3 mb-3" style="max-width: 980px; margin-left: 2rem;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="picture/undraw_searching_p5ux.svg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body3">
+                  <h5 class="card-title3">You Forgot</h5>
+                  <div class="line"></div>
+                  <p class="card-text3">After a while you are trying to rember what that content was that you have find?
+                    But now you forgot it completely.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="picture/undraw_task_31wc.svg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body3">
+                  <h5 class="card-title3">Hit the browser history</h5>
+                  <div class="line"></div>
+                  <p class="card-text3">Fortunately, every browser has a feature of browsing history. 
+                    So, having that in mind you hit the browser history section to find out the piece of content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="picture/undraw_select_option_y75i.svg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body3">
+                  <h5 class="card-title3">Choose the option</h5>
+                  <div class="line"></div>
+                  <p class="card-text3">Browser history shows you all the searches and activities that you have done till that point of time. 
+                    Now from that plathora of options you have to filter out the right option that you want to go with.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="picture/undraw_done_a34v.svg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body3">
+                  <h5 class="card-title3">Got it</h5>
+                  <div class="line"></div>
+                  <p class="card-text3">After filtering out the options from the browser history you got the content that you are looking for!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="picture/undraw_completed_ngx6.svg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body3">
+                  <h5 class="card-title3">Conclusion!</h5>
+                  <div class="line"></div>
+                  <p class="card-text3">Just like browser history, Git tracks your source code what changes have you done so far
+                    ,it is sought of a source code history feature. You can find it any changes whether it is big or small.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--  -->
+      <div class="container mt-5">
+        <div class="cardh">
+            <div class="card-body">
+              Stages In Git
+            </div>
+          </div>
+          <div class="bs-example">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="picture/undraw_winter_designer_a2m7.svg" class="card-img-top" alt="WD">
+                            <div class="card-body0">
+                                <h5 class="card-title0">1.Working Directory</h5>
+                                <div class="line mx-auto"></div>
+                                <p class="card-text0">The working directory is simply, your current directory that you are working on.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="picture/undraw_to_do_list_a49b.svg" class="card-img-top" alt="SA"> 
+                            <div class="card-body0">
+                                <h5 class="card-title0">2.Index & Commit</h5>
+                                <div class="line mx-auto"></div>
+                                <p class="card-text0">Staging area is a section where new files(a.k.a. untracked-files) that are going to be a part of the next commit is held, 
+                                  which lets git know what changes in the file are going to occur for the next commit.</p>
+                            </div>
+                       </div>
+                        <div class="card">
+                            <img src="picture/undraw_online_organizer_ofxm.svg" class="card-img-top" alt="LR">
+                            <div class="card-body0">
+                                <h5 class="card-title0">3.Local Repository</h5>
+                                <div class="line mx-auto"></div>
+                                <p class="card-text0">Local repository is your working directory in your local machine or personal computer. where you make changes locally and that is tracked by the git.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="picture/undraw_going_up_ttm5.svg" class="card-img-top" alt="RR">
+                            <div class="card-body0">
+                                <h5 class="card-title0">4.Remote Repository</h5>
+                                <div class="line mx-auto"></div>
+                                <p class="card-text0">A remote repository, is a Git repository hosted on the Internet or some other network.
+                                It is just cloud storage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-6">
+      <div class="cardh">
+          <div class="card-body">
+           Git Operations
+          </div>
+        </div>
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="picture/1-Repo-w.jpg" class="card-img" alt="INIT">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Initialize</h5>
+                <div class="line"></div>
+                <p class="card-text3">Initialize operation is used to create a git repository.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4"> 
+              <img src="picture/2-AddRp-w.jpg" class="card-img" alt="ADD">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Add</h5>
+                <div class="line"></div>
+                <p class="card-text3">This operation adds a change in the working directory to the staging area. 
+                  Basically, it tells to git that you have to include the updates to a particular file for the next commit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="picture/3-Commit-w.jpg" class="card-img" alt="CMT">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Commit</h5>
+                <div class="line"></div>
+                <p class="card-text3">This operation captures the snapshot of the working directory. So, that it can compare the 
+                  changes in future commits. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="picture/4-Pull-w.jpg" class="card-img" alt="PULL">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Pull</h5>
+                <div class="line"></div>
+                <p class="card-text3">This operation is used to fetch and download content from a remote repository 
+                  and immediately update the local repository to match that content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="picture/5-Push-w.jpg" class="card-img" alt="PUSH">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Push</h5>
+                <div class="line"></div>
+                <p class="card-text3">This operation is used to upload local repository content to a remote repository.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="picture/6-Branch-w.jpg" class="card-img" alt="BRCH">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Branch</h5>
+                <div class="line"></div>
+                <p class="card-text3">This operation creates branch for independent line of development. 
+                  You can think of them as a way to request a brand new working directory, staging area, 
+                  and project history for parellel contribution and development (Default branch in git is master branch).</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="picture/7-Merge-w.jpg" class="card-img" alt="MRG">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Merge</h5>
+                <div class="line"></div>
+                <p class="card-text3">This operation lets you take the independent lines of development 
+                  created by git branch and integrate them into a single branch i.e to master branch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card33 mb-3" style="max-width: 980px; margin-left: 2rem;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="picture/8-Rebase-w.jpg" class="card-img" alt="RBS">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body3">
+                <h5 class="card-title3">Rebase</h5>
+                <div class="line"></div>
+                <p class="card-text3">This is also a way of combining the work between different branches. 
+                  Rebasing takes a set of commits, copies them and stores them outside your repository.
+                  The advantage of rebasing is that it can be used to make linear sequence of commits. 
+                  The commit log or history of the repository stays clean if rebasing is done.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container mt-5 mb-6">
+      <div class="cardh">
+          <div class="card-body">
+           Illustration Of Git's Working Flow
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <img src="picture/gitill1.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+     <!--  -->
+        <div class="container mt-5">
+            <div class="cardh">
+                <div class="card-body">
+                 Few Basic Git commands
+                </div>
+              </div>
+        </div>
+         <div class="container" id="tl">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter1" id="bod"> 
+                            <h1>Configure the author name and email address to be used with your commits</h1>
+                            <code style="color: purple;">$ git config --global user.name "YourUser_Name"</code><br>
+                            <code style="color: purple;">$ git config --global user.email your@email.com</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter2" id="bod">
+                            <h1>Create a new local repository</h1>
+                            <code style="color: lawngreen;">$ git init</code>
+                            <div class="reveal p-2">
+                                click to know more!
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter3" id="bod">
+                            <h1>Add files</h1>
+                            <code style="color: red;">$ git add filename </code><br>
+                            <code style="color: red;">$ git add * [to add all file]</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter19" id="bod">
+                          <h1>Deletes files</h1>
+                          <code style="color: goldenrod;">$ git rm [filename] </code><br>
+                          <div class="reveal p-2">
+                            click to know more!
+                        </div>
+                      </div>
+                  </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter4" id="bod">
+                            <h1>Commit changes to head</h1>
+                            <code style="color: blue;">$ git commit -m "Commit message"</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter5" id="bod">
+                            <h1>Status</h1>
+                            <code style="color: orangered;">$ git status</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter23" id="bod">
+                          <h1>Unstage a file</h1>
+                          <code style="color: rosybrown;">$ git reset [file]</code>
+                          <div class="reveal p-2">
+                            click to know more!
+                        </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter24" id="bod">
+                        <h1>Undo all the commits</h1>
+                        <code style="color: powderblue;">$ git reset [commit]</code>
+                        <div class="reveal p-2">
+                          click to know more!
+                      </div>
+                    </div>
+                </li>
+                    <li>
+                      <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter18" id="bod">
+                          <h1>List the version history</h1>
+                          <code style="color: tomato">$ git log</code><br>
+                          <div class="reveal p-2">
+                            click to know more!
+                        </div>
+                      </div>
+                  </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter6" id="bod">
+                            <h1>Connect to a remote repository</h1>
+                            <code style="color: palevioletred;">$ git remote add origin [server]</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter21" id="bod">
+                            <h1>Push</h1>
+                            <code style="color: peru;">$ git push origin master</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter8" id="bod">
+                            <h1>Create a new branch and switch to it</h1>
+                            <code style="color: yellowgreen;">$ git branch</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter9" id="bod">
+                            <h1>Switch from one branch to another</h1>
+                            <code style="color: lightcoral">$ git checkout [branchname]</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter10" id="bod">
+                            <h1>List all the branches in your repo, and also tell you what branch you're currently in</h1>
+                            <code style="color: lightgreen">$ git checkout -b [branchname]</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter11" id="bod">
+                            <h1>Delete the feature branch</h1>
+                            <code style="color: plum">$ git branch -d [branchname]</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter26" id="bod">
+                          <h1>Delete a branch on remote repository.</h1>
+                          <code style="color: firebrick">$ git push origin :[branch name]</code>
+                          <div class="reveal p-2">
+                            click to know more!
+                        </div>
+                      </div>
+                  </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter12" id="bod">
+                            <h1>Push the branch to your remote repository,so others can use it</h1>
+                            <code style="color: cornflowerblue">$ git push origin [branchname]</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter22" id="bod">
+                          <h1>Pushe all branches to remote repository</h1>
+                          <code style="color: tan">$ git push –all [variable name]</code>
+                          <div class="reveal p-2">
+                            click to know more!
+                        </div>
+                      </div>
+                  </li>
+                    <li>
+                      <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter20" id="bod">
+                          <h1>Clone Repository</h1>
+                          <code style="color: rosybrown;">$ git clone [URL]</code>
+                          <div class="reveal p-2">
+                            click to know more!
+                        </div>
+                      </div>
+                  </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter15" id="bod">
+                            <h1>Fetch and merge changes on the remote server to your working directory</h1>
+                            <code style="color: yellow">$ git pull</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter16" id="bod">
+                            <h1>To merge a different branch into your active branch</h1>
+                            <code style="color: crimson">$ git merge [branchname]</code>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter17" id="bod">
+                            <h1>View file differences</h1>
+                            <code style="color:teal">$ git diff</code><br>
+                            <div class="reveal p-2">
+                              click to know more!
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="time-line" type="button" data-toggle="modal" data-target="#exampleModalCenter25" id="bod">
+                          <h1>To rebase master branch</h1>
+                          <code style="color: chocolate">$ git rebase master</code><br>
+                          <div class="reveal p-2">
+                            click to know more!
+                        </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container"><h3 style="text-align: center; color: black;"><strong>No need to rember all these commands, Just get the cheat sheet!</strong></h23></div>
+        <div class="line mx-auto mt-1"></div>
+        <div class="container  mb-2">
+            <a  href="picture/git-cheat-sheet.jpg" download="Git Cheat Sheet" type="button" class="btn btn-lg btn-block mb-5 mt-3" id="but"><i class="fa fa-chevron-circle-down" aria-hidden="true" id="fa"></i> Download Git Cheat Sheet</a>
+        </div>
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: purple;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Git Configure</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command sets the author name and email address respectively to be used with your commits.
+                  <img src="picture/config.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: lawngreen"> 
+                  <h5 class="modal-title" id="exampleModalLongTitle">git init</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command is used to start a new repository.
+                  <img src="picture/init.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: red;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git add</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                 > This command adds one or more files to the staging area.
+                 <img src="picture/add file.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: rgb(50, 50, 245);">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git commit</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command records or snapshots the file permanently in the version history.
+                  <img src="picture/commit.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: orangered;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git status</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command lists all the files that have to be committed.
+                  <img src="picture/status.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: pink;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git remote add origin [server]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command is used to connect your local repository to the remote server.
+                  <img src="picture/push.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: peru;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git push origin master</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command sends the committed changes of master branch to your remote repository.
+                  <img src="picture/push.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: yellowgreen;">
+                  <h5 class="modal-title" id="exampleModalLongTitle"> git branch</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command creates a new branch and also switches to it.
+                  <img src="picture/branch.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: lightcoral;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git checkout [branchname]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command is used to switch from one branch to another.
+                  <img src="picture/checkout.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="exampleModalCenter10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: lightgreen;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git checkout -b [branchname]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                 > This command lists all the local branches in the current repository.
+                 <img src="picture/-b.png" class="img-fluid" alt="">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+          <div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: plum;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git branch -d [branchname]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command deletes the feature branch.
+                  <img src="picture/-d.png" class="img-fluid" alt="">
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        
+          <div class="modal fade" id="exampleModalCenter12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: cornflowerblue;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git push origin [branch name]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command sends the branch commits to your remote repository.
+                  <img src="picture/push-origin.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: rgb(240, 240, 83) ;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git pull [Repository Link]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command fetches and merges changes on the remote server to your working directory.
+                  <img src="picture/pull.png" class="img-fluid" alt="">
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter16" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: crimson;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git merge [branchname]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command merges the specified branch’s history into the current branch.
+                  <img src="picture/merge-branch.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="modal fade" id="exampleModalCenter17" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: teal;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git diff [first branch] [second branch]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command shows the differences between the two branches mentioned.
+                  <img src="picture/diff.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter18" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: tomato;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git log</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command shows the differences between the two branches mentioned.
+                  <img src="picture/log.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter19" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: goldenrod;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git remove</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command shows the differences between the two branches mentioned.
+                  <img src="picture/rm.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter20" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: rosybrown;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git clone</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command shows the differences between the two branches mentioned.
+                  <img src="picture/clone.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter21" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: peru;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git push origin master</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command sends the committed changes of master branch to your remote repository.
+                  <img src="picture/push-origin.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter22" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: tan;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git push –all [variable name]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command pushes all branches to your remote repository.
+                  <img src="picture/push--all.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter23" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: rosybrown;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git reset [file]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command unstages the file for the commit, but it preserves the file contents.
+                  <img src="picture/reset-main.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter24" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: powderblue;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git reset [commit]</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command undoes all the commits after the specified commit and preserves the changes locally.
+                  <img src="picture/reset-commit.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter25" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: chocolate;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git rebase master</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  > This command will move all our work from current branch to the master. 
+                  <img src="picture/rebase.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalCenter26" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header shadow-sm p-3 mb-1" style="background-color: firebrick;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">git push origin: branch_3</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  >This command deletes a particular branch on your remote repository. 
+                  <img src="picture/origin-br.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        <a class="up" href="#"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+        <script src="main.js"></script>
+        <footer>
+        <p class="foot">Made With <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> By <a href="https://github.com/kriyptor" data-placement="top" data-toggle="popover" data-trigger="hover" data-content="Click to join me">Shivanhu kashyap</a></p>
+    </footer>
+</body>
+</html>
